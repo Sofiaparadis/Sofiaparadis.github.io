@@ -20,7 +20,7 @@ let currentColor; //  the current drawing color
 let autoHue = 0; // used to shift the color over time automatically for hacker requirments! - found this on p5js website
 
 function setup() {
-  createCanvas(600, 600);
+ createCanvas(windowWidth, windowHeight);
   background(20); // dark background
   currentColor = color(255, 100, 150); // starting color (gets overridden by autoHue- I just figured out
 }
@@ -80,7 +80,7 @@ function drawInstructions() {
   // semi-transparent dark box behind the text
   fill(0, 0, 0, 150);
   noStroke();
-  rect(10, 10, 200, 185, 10);
+rect(10, 10, 200,185, 10);
 
   // white instruction text
   fill(255);
@@ -91,7 +91,7 @@ function drawInstructions() {
   text("E = toggle eraser", 20, 72);
   text("C = clear screen", 20, 92);
   text("S = save drawing", 20, 112);
-
+  
   // this line changes color depending on whether eraser is on or off- I used a variable to track which mode the sketch is in inside draw otherwise it gets confusing
   fill(eraserMode ? color(255, 100, 100) : color(100, 255, 180));
   text(eraserMode ? "MODE: eraser" : "MODE: drawing", 20, 140);
@@ -142,4 +142,10 @@ function keyPressed() {
   if (keyCode == DOWN_ARROW) {
     brushSize = brushSize - 5;
   }
+  
+  function doubleClicked() {
+  let fs = fullscreen();
+  fullscreen(!fs);
+  }
 }
+
