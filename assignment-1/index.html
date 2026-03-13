@@ -2,9 +2,6 @@
 <html lang="en">
   <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
-    <!-- Deactivate sound library for Neocities compatibility -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script> -->
-
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
     <title>Assignment[1] = Frozen</title>
@@ -12,29 +9,39 @@
       body {
         margin: 0;
         font-family: sans-serif;
+        background-color: #F5F3E6;
       }
       .header {
         padding: 12px 20px;
-        background: #f0e6ff;
+        background: #AD0D60;
         display: flex;
         align-items: center;
         gap: 16px;
       }
       .header a {
         text-decoration: none;
-        color: #6a0dad;
+        color: white;
         font-size: 0.9rem;
       }
       .header h2 {
         margin: 0;
         font-size: 1rem;
-        color: #6a0dad;
+        color: white;
       }
-      iframe {
-        width: 100%;
-        height: calc(100vh - 50px);
-        border: none;
-        display: block;
+      .preview {
+        text-align: center;
+        margin-top: 60px;
+      }
+      .preview img {
+        width: 300px;
+        border-radius: 12px;
+        cursor: pointer;
+        border: 4px solid #AD0D60;
+      }
+      .preview p {
+        margin-top: 16px;
+        color: #AD0D60;
+        font-size: 0.9rem;
       }
     </style>
   </head>
@@ -43,9 +50,17 @@
       <a href="../index.html">← Back</a>
       <h2>Assignment 1 = Frozen</h2>
     </div>
-    <iframe src="https://studio.code.org/c/2769049994" allowfullscreen></iframe>
+    <div class="preview">
+      <a href="https://studio.code.org/c/2769049994" target="_blank">
+        <img src="../assets/thumb_1.png" alt="Frozen project preview">
+      </a>
+      <p>Click the image to open the project ↗</p>
+    </div>
     <main>
     </main>
     <script src="sketch.js"></script>
   </body>
 </html>
+
+
+
