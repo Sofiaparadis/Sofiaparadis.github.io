@@ -3,11 +3,11 @@ body {
   max-width: 700px;
   margin: 40px auto;
   padding: 0 20px;
-  background-color: #f0e6ff; /* 💜 change this */
+  background-color: #f0e6ff;
 }
 h1 {
   margin-bottom: 20px;
-  color: #6a0dad; /* 💜 change this */
+  color: #6a0dad;
 }
 .grid {
   display: grid;
@@ -17,6 +17,15 @@ h1 {
 .grid a {
   text-decoration: none;
   color: inherit;
+  border: 2px solid #6a0dad; /* 💜 outline color */
+  border-radius: 8px; /* rounded corners */
+  overflow: hidden;
+  display: block;
+  padding-bottom: 10px;
+  transition: box-shadow 0.2s;
+}
+.grid a:hover {
+  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.3); /* 💜 glow on hover */
 }
 .grid img {
   display: block;
@@ -25,10 +34,10 @@ h1 {
   object-fit: cover;
 }
 .grid p {
-  margin: 6px 0 0;
+  margin: 6px 10px 0;
   font-size: 0.85rem;
 }
 .grid .desc {
   font-size: 0.75rem;
-  color: #666; /* 💜 change this too if you want */
+  color: #666;
 }
