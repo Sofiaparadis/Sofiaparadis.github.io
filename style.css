@@ -7,7 +7,7 @@ body {
 }
 h1 {
   margin-bottom: 20px;
-  color: AD0D60;
+  color: #AD0D60; /* was missing the # */
 }
 .grid {
   display: grid;
@@ -16,16 +16,16 @@ h1 {
 }
 .grid a {
   text-decoration: none;
-  color: inherit;
-  border: 2px solid #AD0D60; 
-  border-radius: 10px; 
+  color: #AD0D60; /* pink for assignment titles */
+  border: 2px solid #AD0D60;
+  border-radius: 10px;
   overflow: hidden;
   display: block;
   padding-bottom: 10px;
   transition: box-shadow 0.2s;
 }
 .grid a:hover {
-  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.3); 
+  box-shadow: 0 4px 12px rgba(173, 13, 96, 0.3);
 }
 .grid img {
   display: block;
@@ -39,5 +39,6 @@ h1 {
 }
 .grid .desc {
   font-size: 0.75rem;
-  color: #3B3838;
+  color: #3B3838; /* near-black for descriptions */
 }
+  
