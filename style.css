@@ -7,7 +7,7 @@ body {
 }
 h1 {
   margin-bottom: 20px;
-  color: #AD0D60; /* was missing the # */
+  color: #AD0D60; 
 }
 .grid {
   display: grid;
@@ -16,8 +16,8 @@ h1 {
 }
 .grid a {
   text-decoration: none;
-  color: #AD0D60; /* pink for assignment titles */
-  border: 2px solid #AD0D60;
+  color: #AD0D60; 
+  border: 4px solid #AD0D60;
   border-radius: 10px;
   overflow: hidden;
   display: block;
